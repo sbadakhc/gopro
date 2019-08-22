@@ -67,7 +67,7 @@ To stop this example and clean up the pod, press <kbd>Ctrl</kbd>+<kbd>C</kbd> on
 the `kubectl run` command and then run:
 
 ```
-kubectl delete deployment demo
+kubectl delete deployment gopro
 ```
 
 [sa]: https://kubernetes.io/docs/admin/authentication/#service-account-tokens
