@@ -1,4 +1,5 @@
-FROM alpine:latest
-WORKDIR /root/
-COPY /gopro .
-CMD ["sh","./gopro"]
+FROM golang:latest 
+RUN mkdir /app 
+ADD gopro /app/ 
+WORKDIR /app 
+CMD ["/app/gopro"]
