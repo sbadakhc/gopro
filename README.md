@@ -3,8 +3,6 @@
 Simple in cluster go client based on:
 https://github.com/kubernetes/client-go/tree/master/examples/in-cluster-client-configuration
 
-Most of the documentation and code has been reproduced from that repo.
-
 ### Authenticating inside the cluster
 
 This example shows you how to configure a client with client-go to authenticate
@@ -52,6 +50,12 @@ There are 4 pods in the cluster
 There are 4 pods in the cluster
 There are 4 pods in the cluster
 ...
+```
+
+You can also verify the client by checking the pods logs.
+
+```
+kubectl logs gopro
 ```
 
 The example now runs on Kubernetes API and successfully queries the number of
